@@ -1,0 +1,1 @@
+ n Dari program diatas dapat disimpulkan bahwa seharusnya deklarasi array berukuran 9 buah, namun hasil yang didapat berukuran 13 hal ini menyebabkan terjadinya exception. Sehingga catch yang sesuai dengan block diatas adalah "Anda Melemparkan exception dengan klausa throw
