@@ -1,0 +1,23 @@
+public class KlausaThrow {
+    public static void main(String[] args){
+        String input = "Throw RuntimeException";
+        System.out.println("\n**** MENGGUNAKAN KLAUSA THROW ****\n");
+        try{
+            if(null == input){
+                throw new NullPointerException();
+            }
+            else switch (input) {
+                case "Throw RuntimeException":
+                    throw new RuntimeException("Melempar Exception");
+                default:
+                    System.out.println("Input adalah : "+input);
+                    break;
+            }
+            System.out.println("\nPernyataan dalam blok try setelah bebas dari pelemparan exception.");
+        }
+        catch(RuntimeException exc){
+            System.err.println("Exception ditangkap di sini.");
+            System.err.println("\nException yang ditangkap adalah : "+exc);
+        }
+    } 
+}
